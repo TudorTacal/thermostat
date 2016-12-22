@@ -9,3 +9,70 @@
 .Low-usage {
   color: green;
 }
+
+#welcome {
+  text-align: center;
+  margin-right: 130px;
+  color: #4c545a;
+  text-shadow: 1px 1px grey;
+}
+
+#container {
+  position: relative;
+  background: url('./assets/image.png') no-repeat;
+  width: 700px;
+  height: 700px;
+  margin: auto;
+}
+
+
+#buttons {
+  position: relative;
+  padding-top: 70px;
+  max-width: 200px;
+  margin-right: 140px;
+  float: right;
+  clear:right;
+}
+
+.button {
+  border-radius: 2px;
+  background-color: #8f99a4;
+  width: 150px;
+  margin: 2px;
+
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+#display {
+  color: #434b53;
+  font-family: Arial;
+  position: relative;
+  margin-top: 80px;
+  margin-left: 120px;
+  position: relative;
+  max-width: 200px;
+  float: left;
+  clear:both;
+}
+
+#display p {
+  font-size: 12px;
+}
+
+#select-city{
+  position: relative;
+  padding-top: 20px;
+  margin-left: 40px;
+  width: 300px;
+}*
+
+#form {
+  display: inline-block;*/
+}
+
+
+#city {
+  width: 100px;
+}

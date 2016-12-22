@@ -15,7 +15,6 @@ class Thermostat < Sinatra::Base
   end
 
   post '/thermostat/data' do
-
     thermostat = ThermostatData.get(1)
     thermostat.temperature = params[:temperature]
     thermostat.city = params[:city]

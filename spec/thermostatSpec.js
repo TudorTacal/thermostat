@@ -32,7 +32,7 @@ describe("Thermostat", function () {
         i++;
       }
       while (i < 10);
-      expect(function () {thermostat.decreaseTemperature()}).toThrow("Mininum temperature is 10 degrees. Cannot go below.")
+      expect(function () {thermostat.decreaseTemperature();}).toThrow("Mininum temperature is 10 degrees. Cannot go below.");
     });
 
     it('if power saving mode is on the maximum temperature is 25 degrees', function () {
@@ -43,7 +43,7 @@ describe("Thermostat", function () {
         i++;
       }
       while (i < 6);
-      expect(function() {thermostat.increaseTemperature()}).toThrow("Maximum temperature is 25 degrees. Cannot go above.")
+      expect(function() {thermostat.increaseTemperature();}).toThrow("Maximum temperature is 25 degrees. Cannot go above.");
     });
 
     it('if power saving mode is off the maximum temperature is 32 degrees', function () {
@@ -54,7 +54,7 @@ describe("Thermostat", function () {
         i++;
       }
       while (i < 13);
-      expect(function(){thermostat.increaseTemperature()}).toThrow("Maximum temperature is 32 degrees. Cannot go above.")
+      expect(function(){thermostat.increaseTemperature();}).toThrow("Maximum temperature is 32 degrees. Cannot go above.");
     });
 
     it('maximum temperature should be 25 by default - power saving mode', function (){

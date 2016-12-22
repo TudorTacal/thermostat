@@ -5,16 +5,16 @@ var Thermostat = function () {
     this.MINIMUM_TEMPERATURE = 10;
     this.MAXIMUM_TEMPERATURE_PSM_OFF = 32;
     this.MAXIMUM_TEMPERATURE_PSM_ON = 25;
-    this.LOW_USAGE = 18
-    this.HIGH_USAGE = 25
+    this.LOW_USAGE = 18;
+    this.HIGH_USAGE = 25;
 };
 
 Thermostat.prototype.getTemperature = function () {
-  return this.temperature
+  return this.temperature;
 };
 
 Thermostat.prototype.increaseTemperature = function () {
-  if (this.temperature >= this.maximumTemperature) throw `Maximum temperature is ${this.maximumTemperature} degrees. Cannot go above.`
+  if (this.temperature >= this.maximumTemperature) throw `Maximum temperature is ${this.maximumTemperature} degrees. Cannot go above.`;
   this.temperature += 1;
 };
 
