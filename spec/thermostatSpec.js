@@ -42,7 +42,7 @@ describe("Thermostat", function () {
         thermostat.increaseTemperature();
         i++;
       }
-      while (i < 6);
+      while (i < 5);
       expect(function() {thermostat.increaseTemperature();}).toThrow("Maximum temperature is 25 degrees. Cannot go above.");
     });
 
@@ -53,7 +53,7 @@ describe("Thermostat", function () {
         thermostat.increaseTemperature();
         i++;
       }
-      while (i < 13);
+      while (i < 12);
       expect(function(){thermostat.increaseTemperature();}).toThrow("Maximum temperature is 32 degrees. Cannot go above.");
     });
 
@@ -77,11 +77,11 @@ describe("Thermostat", function () {
       thermostat.decreaseTemperature();
       thermostat.decreaseTemperature();
       thermostat.decreaseTemperature();
-      expect(thermostat.energyUsage()).toEqual('Low usage');
+      expect(thermostat.energyUsage()).toEqual('Low-usage');
     });
 
     it('displays medium usage when temperature is between 18 and 25 degrees', function () {
-      expect(thermostat.energyUsage()).toEqual('Medium usage');
+      expect(thermostat.energyUsage()).toEqual('Medium-usage');
     });
 
     it('displays high usage when temperature is above 25 degrees', function () {
@@ -90,7 +90,7 @@ describe("Thermostat", function () {
         thermostat.increaseTemperature();
       }
       console.log(thermostat.getTemperature());
-      expect(thermostat.energyUsage()).toEqual('High usage');
+      expect(thermostat.energyUsage()).toEqual('High-usage');
     });
 
 
