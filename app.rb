@@ -18,6 +18,7 @@ class Thermostat < Sinatra::Base
     thermostat = ThermostatData.get(1)
     thermostat.temperature = params[:temperature]
     thermostat.city = params[:city]
+    thermostat.city_temperature = params[:city_temperature]
     thermostat.save
   end
 

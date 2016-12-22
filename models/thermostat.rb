@@ -9,5 +9,10 @@ class ThermostatData
   property :id, Serial
   property :temperature, Float
   property :city, String
+  property :city_temperature, Float
+
+  DataMapper.setup(:default, 'postgres://localhost/thermostat_data_test')
+  DataMapper.finalize
+  DataMapper.auto_upgrade!
 
 end
