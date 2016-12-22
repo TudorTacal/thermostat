@@ -7,8 +7,8 @@ feature "thermostat temperature" do
 
   scenario "it should start with the default temp of 20 degrees" do
     visit("/")
-    click_button("+")
+    click_button("Increase temperature")
     visit("/")
-    expect(page).to have_content("The thermostat temperature is 21")
+    expect(page).to have_content("Thermostat temperature: 21")
   end
 end
