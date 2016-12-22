@@ -2,7 +2,7 @@
 
 This project represents our fifth weekly challenge at Makers Academy coding bootcamp.
 
-It sends an Ajax request using 'http://openweathermap.org/api' to extract the weather information for the required city.
+A user can set the temperature of the thermostat. This can increase, decrease or be reseted. The default temperature is 20 degrees. The outside temperature can be obtained by inputing the location: city. Then, an Ajax request is being sent using 'http://openweathermap.org/api' to extract the weather information for the required city. It also features a power saving mode which can be turned on or off. This alters the maximum and minimum temperature of the thermostat. The last feature is showing the usage which changes colours relative to the temperature. Every change is saved into the database and loaded on startup. 
 
 ## Screenshots
 
@@ -24,7 +24,7 @@ $
 ## Technologies used
 
 * **Sinatra** for DSL.
-* **Javascript** for writing the thermostat logic.
+* **JavaScript** for writing the thermostat logic.
 * **Jquery** for event handling.
 * **Ajax** for sending requests.
 * **PostgreSQL** as database.
