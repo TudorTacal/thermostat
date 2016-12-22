@@ -49,16 +49,21 @@ textarea:focus, input:focus{
   color: #434b53;
   font-family: Arial;
   position: relative;
-  margin-top: 80px;
+  margin-top: 82px;
   margin-left: 120px;
   position: relative;
   max-width: 200px;
   float: left;
   clear:both;
+  padding: -10px;
+  /*line-height: 7px;*/
 }
 
 #display p {
   font-size: 12px;
+  padding: 0px;
+  line-height: 9px;
+
 }
 
 #select-city{

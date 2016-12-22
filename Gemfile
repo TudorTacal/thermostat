@@ -11,3 +11,4 @@ gem "dm-postgres-adapter"
 gem "rake"
 gem "json"
 gem "selenium-webdriver"
+gem 'pry'
